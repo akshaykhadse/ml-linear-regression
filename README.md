@@ -5,7 +5,7 @@ The aim of this assignment is to learn the application of machine learning algor
 
 This dataset contains information collected by the U.S Census Service concerning housing in the area of Boston Mass. It was obtained from the [StatLib archive](http://lib.stat.cmu.edu/datasets/boston), and has been used extensively throughout the literature to benchmark algorithms. The data was originally published by Harrison, D. and Rubinfeld, D.L. *Hedonic prices and the demand for clean air', J. Environ. Economics & Management, vol.5, 81-102, 1978.*
 
-The dataset is small in size with only 506 cases. It can be used to predict the median value of a home. There are 14 attributes in each case of the dataset. They are:
+The dataset is small in size with only 506 cases. It can be used to predict the median value of a home, which is done here. There are 14 attributes in each case of the dataset. They are:
 
 1. `CRIM` - per capita crime rate by town
 2. `ZN` - proportion of residential land zoned for lots over 25,000 sq.ft.
@@ -22,7 +22,15 @@ The dataset is small in size with only 506 cases. It can be used to predict the 
 13. `LSTAT` - % lower status of the population
 14. `MEDV` - Median value of owner-occupied homes in $1000's
 
-A linear regression with regularization via gradient descent is implemented. All the code is written in a single python file. The python program accepts the data directory path as input where the train and test csv files reside. Note that the data directory will contain two files `train.csv` used to train your model and `test.csv` for which the output predictions are to be made. The output predictions get written to a file named `output.csv`. The `output.csv` file should have two comma separated columns [ID,Output].
+## Aim
+
+- To implement a linear regression with regularization via gradient descent. 
+- to implement gradient descent with Lp norm, for 3 different values of p in (1,2]
+- To contrast the difference between performance of linear regression Lp norm and L2 norm for these 3 different values.
+- Tally that the gradient descent for L2 gives same result as matrix inversion based solution.
+
+
+All the code is written in a single python file. The python program accepts the data directory path as input where the train and test csv files reside. Note that the data directory will contain two files `train.csv` used to train your model and `test.csv` for which the output predictions are to be made. The output predictions get written to a file named `output.csv`. The `output.csv` file should have two comma separated columns [ID,Output].
 
 
 ## Working of Code
